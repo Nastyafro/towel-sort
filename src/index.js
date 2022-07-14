@@ -2,7 +2,10 @@
 // You should implement your task here.
 
 module.exports = function towelSort (matrix) {
-  let Arr = [];
+  if (matrix == undefined) {
+    console.log([]);
+  } else {
+    let Arr = [];
   matrix.forEach((el, i) => {
     if(i%2 == 0 || i == 0) {
       Arr.push(el);
@@ -15,5 +18,7 @@ module.exports = function towelSort (matrix) {
   Arr.map((el) => {
     newArr = newArr.concat(el);
   })
+  
   return newArr;
+  }
 }
