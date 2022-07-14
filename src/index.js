@@ -2,8 +2,8 @@
 // You should implement your task here.
 
 module.exports = function towelSort (matrix) {
-  if (matrix == undefined) {
-    console.log([]);
+  if (matrix == null || matrix.length == 0) {
+    return [];
   } else {
     let Arr = [];
   matrix.forEach((el, i) => {
